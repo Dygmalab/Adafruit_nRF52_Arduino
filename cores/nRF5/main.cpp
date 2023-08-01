@@ -33,7 +33,13 @@
 void Bluefruit_printInfo() __attribute__((weak));
 void Bluefruit_printInfo() {}
 #endif
+void loop(){
 
+}
+
+void setup(){
+
+};
 // Weak empty variant initialization function.
 // May be redefined by variant files.
 void initVariant() __attribute__((weak));

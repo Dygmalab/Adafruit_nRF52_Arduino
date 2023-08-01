@@ -51,8 +51,8 @@ extern uint32_t __bss_end__[];
 extern unsigned char __HeapBase[];
 extern unsigned char __HeapLimit[];
 
-extern uint32_t __StackTop[];
-extern uint32_t __StackLimit[];
+//extern uint32_t __StackTop[];
+//extern uint32_t __StackLimit[];
 
 extern "C"
 {
@@ -147,7 +147,6 @@ void dbgMemInfo(void)
 void dbgPrintVersion(void)
 {
   PRINTF("\r\n");
-  PRINTF("BSP Library : " ARDUINO_BSP_VERSION "\r\n");
   PRINTF("Bootloader  : %s\r\n", getBootloaderVersion());
   PRINTF("Serial No   : %s\r\n", getMcuUniqueID());
   PRINTF("\r\n");
